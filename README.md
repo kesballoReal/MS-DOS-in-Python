@@ -19,7 +19,7 @@ This project simulates a basic MS-DOS environment using Python scripts. It inclu
 1. **Clone the Repository or Download and extract the zip file.**
 
    ```bash
-   git clone https://github.com/yourusername/msdosproject.git
+   git clone https://github.com/kesballoReal/msdosproject.git
    cd msdosproject
    ```
 
@@ -81,7 +81,7 @@ To contribute to this project:
 2. **Clone your fork**:
 
    ```bash
-   git clone https://github.com/yourusername/msdosproject.git
+   git clone https://github.com/kesballoReal/msdosproject.git
    ```
 
 3. **Create a Branch** for your changes:
