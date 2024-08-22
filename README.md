@@ -16,7 +16,7 @@ This project simulates a basic MS-DOS environment using Python scripts. It inclu
 
 ## Installation
 
-1. **Clone the Repository**
+1. **Clone the Repository or Download and extract the zip file.**
 
    ```bash
    git clone https://github.com/yourusername/msdosproject.git
@@ -38,10 +38,22 @@ This project simulates a basic MS-DOS environment using Python scripts. It inclu
 2. **Run the Python Script**
 
    ```bash
-   python3 boot.py
+   sudo python3 boot.py
    ```
+   or
 
+   ```bash
+   python boot.py
+   ```
    This will start the MS-DOS emulator. You will see a command prompt where you can enter commands.
+   Type in the console
+   
+   ```bash
+   setup
+   ```
+   to start the Setup
+
+   
 
 ## Commands
 
