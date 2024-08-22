@@ -19,7 +19,7 @@ This project simulates a basic MS-DOS environment using Python scripts. It inclu
 1. **Clone the Repository or Download and extract the zip file.**
 
    ```bash
-   git clone https://github.com/kesballoReal/msdosproject.git
+   git clone https://github.com/kesballoReal/MS-DOS-in-Python
    cd msdosproject
    ```
 
