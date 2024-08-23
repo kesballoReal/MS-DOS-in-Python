@@ -15,7 +15,7 @@ total, used, free = shutil.disk_usage("/")
 
 
 
-__version__  = 1.0
+__version__  = 1.1
 
 
 def clear():
@@ -133,6 +133,7 @@ def setup2():
 
         
         print(f"\nMS-DOS {__version__} has been successfully installed in {install_path}!")
+        print("Boot MS-DOS from your HDD to start using it!.")
         tm.sleep(2)
 
 

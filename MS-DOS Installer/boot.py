@@ -1,5 +1,4 @@
 import os
-import msdos
 import setup
 
 # Imposta la directory corrente
@@ -33,10 +32,6 @@ __version__ = install_info.get('version', setup.__version__)
 
 # Ciclo principale
 while True:
-    if is_installed:
-        choice = input("Boot in MS-DOS? (Y/n): ").lower()
-        if choice == 'y':
-            msdos.main(install_dir, __version__)
     try:
         line = input(f"{current_dir}> ")
     except KeyboardInterrupt:
@@ -50,8 +45,6 @@ while True:
         if is_installed:
             __version__ = install_info.get('version', setup.__version__)
     elif line == "setup" and is_installed:
-        print(f"MS-DOS {__version__} is already installed.")      
-    elif line == 'msdos' and is_installed:
-        msdos.main(install_dir, __version__)       
+        print(f"MS-DOS {__version__} is already installed.")             
     else:
         print(f"Error: command '{line}' not recognized.")
