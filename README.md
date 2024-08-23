@@ -64,6 +64,8 @@ This project simulates a basic MS-DOS environment using Python scripts. It inclu
 - **`print <message>`**: Print a message to the terminal.
 - **`nano <filename>`**: Open a file in a simple text editor. If the file does not exist, it will be created.
 - **`defaultdir=<directory>`**: Set a new default directory. This will change the starting directory for the next session.
+- **`createuser <username> <password> <retype password>`**: Create a new user.
+- **`login <username> <password> `**: Log in a user.
 
 ## Preferences
 
