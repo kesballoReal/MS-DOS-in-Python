@@ -66,6 +66,9 @@ This project simulates a basic MS-DOS environment using Python scripts. It inclu
 - **`defaultdir=<directory>`**: Set a new default directory. This will change the starting directory for the next session.
 - **`createuser <username> <password> <retype password>`**: Create a new user.
 - **`login <username> <password> `**: Log in a user.
+- **`copy <source> <destination>`**: Copy a file to a path.
+- **`move <source> <destination> `**: Move a file to a path.
+- **`del <file> `**: Delete a file.
 
 ## Preferences
 
