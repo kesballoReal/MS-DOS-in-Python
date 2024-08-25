@@ -2,12 +2,7 @@ import os
 import setup
 
 # Imposta la directory corrente
-if os.name == 'nt':
-    os.chdir('C://')
-    install_dir = "C://MS-DOS"
-else:
-    os.chdir('/')
-    install_dir = "/MS-DOS"
+install_dir = os.getcwd() + "/MS-DOS"
 
 current_dir = os.getcwd()
 __version__ = None
@@ -15,7 +10,7 @@ __version__ = None
 # Funzione per caricare le informazioni di installazione da info.txt
 def load_install_info():
     install_info = {}
-    info_file_path = os.path.join(install_dir, 'info.txt')  # Percorso corretto per info.txt nella cartella MS-DOS
+    info_file_path = os.path.join(install_dir, '/info.txt')  # Percorso corretto per info.txt nella cartella MS-DOS
 
     if os.path.exists(info_file_path):
         with open(info_file_path, 'r') as f:
@@ -45,6 +40,6 @@ while True:
         if is_installed:
             __version__ = install_info.get('version', setup.__version__)
     elif line == "setup" and is_installed:
-        print(f"MS-DOS {__version__} is already installed.")             
+        print(f"MS-DOS {__version__} is already installed.")          
     else:
         print(f"Error: command '{line}' not recognized.")

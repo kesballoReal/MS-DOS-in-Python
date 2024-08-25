@@ -3,12 +3,7 @@ import msdos
 import setup
 
 # Imposta la directory corrente
-if os.name == 'nt':
-    os.chdir('C://')
-    install_dir = "C://MS-DOS"
-else:
-    os.chdir('/')
-    install_dir = "/MS-DOS"
+install_dir = os.getcwd() + "/MS-DOS"
 
 current_dir = os.getcwd()
 __version__ = None
